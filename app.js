@@ -4,8 +4,8 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Configura Express para servir archivos estáticos desde la carpeta "public"
-app.use(express.static(path.join(__dirname, 'public')));
+// Configura Express para servir archivos estáticos desde la carpeta raiz
+app.use(express.static(path.join(__dirname, '')));
 
 // Ruta de inicio
 app.get('/', (req, res) => {
