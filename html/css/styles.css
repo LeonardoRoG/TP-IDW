@@ -6,6 +6,41 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: #eaeaea;
+}
+.header {
+    background-color: rgb(164, 216, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 10px;
+    list-style: none;
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+}
+.nav-links a{
+    color: #000;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
 }
 
 .flex-container{
@@ -67,4 +102,17 @@
     bottom: 5%;
     display: flex;
     justify-content: center;
+}
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgb(201, 201, 201) ;
+}
+
+.footer{
+    height: 140px;
+    background-color:rgb(164, 216, 213);
+}
+
+.nav-links-footer a{
+    color: #000;
+    text-decoration: none;
 }
