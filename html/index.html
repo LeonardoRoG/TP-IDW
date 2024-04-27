@@ -10,8 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body class="nunito-body">
-    <header>
-<body>
     <header class="header">
         <div class="logo">
             <img src="Logoxd.png " alt="Logo">
@@ -25,26 +23,44 @@
         
     </header>
 
-    <main>
+    <main class="main-container">
         <!-- Contenido principal -->
-        <section>
+        <section class="busqueda-container">
             <!-- Hero Image -->
-
+            <div class="buscador">
+                Cuadro de busqueda
+                <form action="">
+                    <label for="destino" class="form-label">Destino:</label>
+                    <input type="text" name="destino" class="form-input">
+                    <label for="personas" class="form-label">Personas</label>
+                    <input type="number" name="personas" class="form-input">
+                    <button type="submit">Buscar</button>
+                </form>
+                
+            </div>
         </section>
+        <div>
+            <h2>Elegí tu destino</h2>
+        </div>
         <section class="flex-container">
             <!-- Cards -->
             <div class="card-item">
-                <div class="card-imagen">
-                    <img src="https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg" alt="Casa1">
-                </div>
-                <div class="card-medio">
-                    Alojamiento
-                </div>
-                <div class="card-content">
-                    <h3>Casa 1</h3>
-                    <p>Barrio Villa 31</p>
-                    <p>$50.000 por noche</p>
-                </div>
+                <a href="">
+                    <div class="card-imagen">
+                        <img src="https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg" alt="Casa1">
+                    </div>
+                    <div class="card-medio">
+                        Alojamiento
+                    </div>
+                    <div class="card-content">
+                        <h3>Casa 1</h3>
+                        <p>Barrio Villa 31</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>$50.000 por día</p>
+                    </div>
+                </a>
             </div>
             <div class="card-item">Card 2</div>
             <div class="card-item">Card 3</div>
@@ -52,10 +68,27 @@
             <div class="card-item">Card 5</div>
             <div class="card-item">Card 6</div>
         </section>
+        <div>
+            <h2>Hoteles en oferta en Villa 31 y alrededores</h2>
+        </div>
         <section class="flex-container">
             <!-- Cards -->
+            <div class="card-item2">
+                <a href="">
+                    <div class="card-imagen">
+                        <img src="https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg" alt="Casa1">
+                    </div>
+                    <div class="card-medio">
+                        Alojamiento
+                    </div>
+                    <div class="card-content">
+                        <h3>Casa 1</h3>
+                        <p>Barrio Villa 31</p>
+                        <p>$50.000 por noche</p>
+                    </div>
+                </a>
+            </div>
             <div class="card-item2">Card 2</div>
-            <div class="card-item2">Card 1</div>
             <div class="card-item2">Card 3</div>
             <div class="card-item2">Card 4</div>
             <div class="card-item2">Card 5</div>

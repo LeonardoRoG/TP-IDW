@@ -47,10 +47,28 @@ body {
 }
 
 .flex-container{
-    padding-top: 70px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.busqueda-container{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscador{
+    background-color: #eaeaea;
+    padding: 16px 16px;
+    border-radius: 16px;
 }
 
 .card-content{
@@ -67,12 +85,17 @@ body {
     transition: all 200ms ease-out;
 }
 
+.card-item a{
+    text-decoration: none;
+    color: #000;
+}
+
 .card-item:hover{
     scale: 103%;
 
 }
 
-.card-item img{
+.card-imagen img{
     width: 100%;
     border-radius: 16px 16px 0px 0px;
 }
@@ -100,12 +123,22 @@ body {
     background-color: rgb(198, 255, 243);
     width: 50%;
     border-radius: 12px;
+    padding: 2px 6px;
     font-weight: 600;
     position: relative;
     left: 25%;
     bottom: 5%;
     display: flex;
     justify-content: center;
+}
+
+.main-container{
+    padding: 0px 0px;
+    padding-top: 70px;
+}
+
+.main-container div h2{
+    padding: 10px 16px;
 }
 
 .footer{
