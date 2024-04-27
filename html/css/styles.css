@@ -6,6 +6,8 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -102,9 +104,6 @@ body {
     bottom: 5%;
     display: flex;
     justify-content: center;
-}
-    border-radius: 8px;
-    box-shadow: 5px 5px 15px rgb(201, 201, 201) ;
 }
 
 .footer{
