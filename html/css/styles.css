@@ -1,0 +1,152 @@
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 200 to 1000 */
+
+.nunito-body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaeaea;
+}
+.header {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: rgb(164, 216, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 10px;
+    list-style: none;
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+}
+.nav-links a{
+    color: #000;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.busqueda-container{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-image: url(https://cdn.pixabay.com/photo/2017/04/09/09/56/avenue-2215317_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buscador{
+    background-color: #eaeaea;
+    padding: 16px 16px;
+    border-radius: 16px;
+}
+
+.card-content{
+    margin: 0px 6px 0px 6px;
+}
+
+.card-item{
+    margin: 20px;
+    width: 250px;
+    min-width: 225px;
+    height: 350px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 15px rgb(212, 212, 212);
+    transition: all 200ms ease-out;
+}
+
+.card-item a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-item:hover{
+    scale: 103%;
+
+}
+
+.card-imagen img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card-item div h3{
+    margin-top: 0px;
+}
+
+.card-item2{
+    margin: 20px;
+    width: 250px;
+    min-width: 225px;
+    height: 350px;
+    border-radius: 16px;
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    transition: all 250ms ease-out;
+}
+
+.card-item2:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-medio{
+    background-color: rgb(198, 255, 243);
+    width: 50%;
+    border-radius: 12px;
+    padding: 2px 6px;
+    font-weight: 600;
+    position: relative;
+    left: 25%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    padding: 0px 0px;
+    padding-top: 70px;
+}
+
+.main-container div h2{
+    padding: 10px 16px;
+}
+
+.footer{
+    height: 140px;
+    background-color:rgb(164, 216, 213);
+}
+
+.nav-links-footer a{
+    color: #000;
+    text-decoration: none;
+}
