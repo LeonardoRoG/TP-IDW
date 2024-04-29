@@ -7,7 +7,12 @@
   font-weight: 400;
   font-style: normal;
 }
-
+.indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 *{
     box-sizing: border-box;
     margin: 0;
@@ -65,13 +70,47 @@ body {
     justify-content: center;
     
 }
+.welcome-heading {
+    color: rgb(255, 255, 255); /* Color blanco */
+    text-align: left; /* Alineado a la izquierda */
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10); 
+    margin-bottom: 550px
+    
+     
+}
+
+.company-name {
+    color: rgb(255, 255, 255); /* Color negro */
+    text-align: center; /* Alineado al centro */
+    font-size: 70px;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 2px 4px rgba(230, 234, 35, 0.10); 
+}
+.company-additional {
+    color: rgb(254, 254, 254); /* Color negro para la palabra "Hospedajes" */
+    font-weight: bold; /* Fuente en negrita para resaltar */
+    margin-left: 20px; /* Espacio entre "NaturAlma" y "Hospedajes" */
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10); 
+
+
+}
 
 .buscador{
     background-color: #eaeaea;
     padding: 16px 16px;
     border-radius: 16px;
+    margin-top: 500px;
+    display: center;
+    align-items: flex-start; /* Centra verticalmente el contenido */
+    justify-content: left; /* Centra horizontalmente el contenido */
     
 }
+    
+
 
 .card-content{
     margin: 0px 6px 0px 6px;
