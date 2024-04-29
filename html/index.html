@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20a839c2e7.js" crossorigin="anonymous"></script>
 </head>
 <body class="nunito-body">
     <header class="header">
@@ -19,8 +20,9 @@
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="nosotros.html">Sobre Nosotros</a> </li>
-                <li><a href="contacto.html">Contáctanos!</a> </li>
+                <li><a href="index.html">INICIO</a> </li>
+                <li><a href="nosotros.html">NOSOTROS</a> </li>
+                <li><a href="contacto.html">CONTACTO</a> </li>
              </ul>       
         </nav>
         
@@ -29,90 +31,372 @@
     <main class="main-container">
         <!-- Contenido principal -->
         <section class="busqueda-container">
-            <h1 class="welcome-heading">Bienvenidos</h1>
+            <!-- Hero Image -->
             <div class="welcome-container">
                 <h2 class="company-name">NaturAlma</h2>
                 <img src="Logoxd.png " alt="Logo">
                 <h3 class="company-additional">Hospedajes</h3>
             </div>
-            <!-- Hero Image -->
+            <h1 class="welcome-heading">Busca alojamientos, hoteles, cabañas y más...</h1>
+        </section>
+
+        <div>
+            <h2>¿A dónde querés ir?</h2>
+        </div>
+        <section class="flex-container">
             <div class="buscador">
-                Cuadro de busqueda
                 <form action="">
-                    <label for="destino" class="form-label">Destino:</label>
-                    <input type="text" name="destino" class="form-input">
-                    <label for="personas" class="form-label">Personas</label>
-                    <input type="number" name="personas" class="form-input">
-                    <button type="submit">Buscar</button>
+                    <div>
+                        <label for="destino" class="form-label">Destino:</label>
+                        <input type="text" name="destino" class="form-input">
+                    </div>
+                    <div>
+                        <label for="personas" class="form-label">Personas</label>
+                        <input type="number" name="personas" class="form-input">
+                    </div>
+                    <div>
+                        <button type="submit">Buscar</button>
+                    </div>
                 </form>
-                
             </div>
         </section>
+
         <div>
-            <h2>Elegí tu destino</h2>
+            <h2>Lugares destacados</h2>
         </div>
         <section class="flex-container">
             <!-- Cards -->
             <div class="card-item">
-                <a href="">
-                    <div class="card-imagen">
-                        <img src="https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg" alt="Casa1">
-                    </div>
-                    <div class="card-medio">
-                        Alojamiento
+                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg)">
+                            <!-- bg-imagen hardcodeada para que pueda ser cambiada facilmente -->
+                            <div class="card-medio">
+                                Departamento
+                            </div>
+                        </div>
                     </div>
                     <div class="card-content">
-                        <h3>Casa 1</h3>
+                        <h3>Departamento 1</h3>
                         <p>Barrio Villa 31</p>
                     </div>
                     <hr>
                     <div class="card-footer">
-                        <p>$50.000 por día</p>
+                        <p>Precio por día</p>
+                        <p><strong>$20.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>1 dormitorio</p>
+                        <p>1 servicio</p>
                     </div>
                 </a>
             </div>
-            <div class="card-item">Card 2</div>
-            <div class="card-item">Card 3</div>
-            <div class="card-item">Card 4</div>
-            <div class="card-item">Card 5</div>
-            <div class="card-item">Card 6</div>
+            <div class="card-item">
+                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406_1280.jpg)">
+                            <div class="card-medio" style="background-color: bisque;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Hotel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel 1</h3>
+                        <p>Palermo</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$90.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>2 dormitorios</p>
+                        <p>5 servicios</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-item">
+                                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2013/10/09/02/27/lake-192990_1280.jpg)">
+                            <div class="card-medio" style="background-color: darkolivegreen;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Cabaña
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cabaña 1</h3>
+                        <p>Bariloche</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$72.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>2 dormitorios</p>
+                        <p>3 servicios</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-item">
+                                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_1280.jpg)">
+                            <div class="card-medio" style="background-color: white;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Casa
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Casa 1</h3>
+                        <p>Bahia Blanca</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$40.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>1 dormitorio</p>
+                        <p>2 servicios</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-item">
+                                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_1280.jpg)">
+                            <div class="card-medio" style="background-color: bisque;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Hotel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel 2</h3>
+                        <p>Puerto Madero</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$110.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>3 dormitorios</p>
+                        <p>4 servicios</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-item">
+                                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406_1280.jpg)">
+                            <div class="card-medio" style="background-color: bisque;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Hotel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel 2</h3>
+                        <p>Palermo</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$90.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>2 dormitorios</p>
+                        <p>4 servicios</p>
+                    </div>
+                </a>
+            </div>
         </section>
         <div>
             <h2>Hoteles en oferta en Villa 31 y alrededores</h2>
         </div>
         <section class="flex-container">
             <!-- Cards -->
-            <div class="card-item2">
-                <a href="">
-                    <div class="card-imagen">
-                        <img src="https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg" alt="Casa1">
-                    </div>
-                    <div class="card-medio">
-                        Alojamiento
+            <div class="card-item">
+                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg)">
+                            <!-- bg-imagen hardcodeada para que pueda ser cambiada facilmente -->
+                            <div class="card-medio">
+                                Departamento
+                            </div>
+                        </div>
                     </div>
                     <div class="card-content">
-                        <h3>Casa 1</h3>
+                        <h3>Departamento 1</h3>
                         <p>Barrio Villa 31</p>
-                        <p>$50.000 por noche</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$20.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>1 dormitorio</p>
+                        <p>1 servicio</p>
                     </div>
                 </a>
             </div>
-            <div class="card-item2">Card 2</div>
-            <div class="card-item2">Card 3</div>
-            <div class="card-item2">Card 4</div>
-            <div class="card-item2">Card 5</div>
-            <div class="card-item2">Card 6</div>
+            <div class="card-item">
+                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406_1280.jpg)">
+                            <div class="card-medio" style="background-color: bisque;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Hotel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel 1</h3>
+                        <p>Palermo</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$90.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>2 dormitorios</p>
+                        <p>5 servicios</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-item">
+                                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2013/10/09/02/27/lake-192990_1280.jpg)">
+                            <div class="card-medio" style="background-color: darkolivegreen;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Cabaña
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cabaña 1</h3>
+                        <p>Bariloche</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$72.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>2 dormitorios</p>
+                        <p>3 servicios</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-item">
+                                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_1280.jpg)">
+                            <div class="card-medio" style="background-color: white;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Casa
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Casa 1</h3>
+                        <p>Bahia Blanca</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$40.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>1 dormitorio</p>
+                        <p>2 servicios</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-item">
+                                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2014/07/21/19/20/lobby-398845_1280.jpg)">
+                            <div class="card-medio" style="background-color: bisque;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Hotel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel 2</h3>
+                        <p>Puerto Madero</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$110.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>3 dormitorios</p>
+                        <p>4 servicios</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card-item">
+                                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406_1280.jpg)">
+                            <div class="card-medio" style="background-color: bisque;">
+                                <!-- Color hardcodeado para que sea más facil de cambiar -->
+                                Hotel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel 2</h3>
+                        <p>Palermo</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$90.000</strong> /imp. incluidos</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>2 dormitorios</p>
+                        <p>4 servicios</p>
+                    </div>
+                </a>
+            </div>
         </section>
     </main>
 
     <footer class="footer">
-        <ul class="nav-links-footer">
-            <li class="li-footer"><a href="contacto.html">Contacto</a> </li>
-            <li class="li-footer">Instagram</li>
-            <li class="li-footer">Facebook</li>
-            <li class="li-footer">Gmail</li>
-            <li class="li-footer"><a href="nosotros.html">Nosotros</a> </li>
-         </ul>     
+        <h2 class="texto-redsocial">CONTÁCTANOS!</h2>
+        <div class="redsocial-container">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.gmail.com/" class="fa fa-envelope"></a>
+        </div>   
+        <div class="texto-footer2">
+            <a href="nosotros.html"><u>INFORMACIÓN ACERCA DE NOSOTROS!</u></a>
+        </div>
     </footer>
 </body>
 </html>
