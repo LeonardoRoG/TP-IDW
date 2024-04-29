@@ -30,15 +30,20 @@
     <main class="main-container">
         <!-- Contenido principal -->
         <section class="busqueda-container">
-            <h1 class="welcome-heading">Bienvenidos</h1>
+            <!-- Hero Image -->
             <div class="welcome-container">
                 <h2 class="company-name">NaturAlma</h2>
                 <img src="Logoxd.png " alt="Logo">
                 <h3 class="company-additional">Hospedajes</h3>
             </div>
-            <!-- Hero Image -->
+            <h1 class="welcome-heading">Busca casas, departamentos, hoteles, cabañas y más...</h1>
+        </section>
+
+        <section>
+            <div>
+                <h2>Buscá tu destino</h2>
+            </div>
             <div class="buscador">
-                Cuadro de busqueda
                 <form action="">
                     <label for="destino" class="form-label">Destino:</label>
                     <input type="text" name="destino" class="form-input">
@@ -46,21 +51,23 @@
                     <input type="number" name="personas" class="form-input">
                     <button type="submit">Buscar</button>
                 </form>
-                
             </div>
         </section>
+
         <div>
-            <h2>Elegí tu destino</h2>
+            <h2>Lugares destacados</h2>
         </div>
         <section class="flex-container">
             <!-- Cards -->
             <div class="card-item">
-                <a href="">
-                    <div class="card-imagen">
-                        <img src="https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg" alt="Casa1">
-                    </div>
-                    <div class="card-medio">
-                        Alojamiento
+                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg)">
+                            <!-- bg-imagen embebida para que pueda ser cambiada facilmente -->
+                            <div class="card-medio">
+                                Departamento
+                            </div>
+                        </div>
                     </div>
                     <div class="card-content">
                         <h3>Casa 1</h3>
@@ -68,11 +75,31 @@
                     </div>
                     <hr>
                     <div class="card-footer">
-                        <p>$50.000 por día</p>
+                        <p>Precio por día</p>
+                        <p><strong>$50.000</strong> /imp. incluidos</p>
                     </div>
                 </a>
             </div>
-            <div class="card-item">Card 2</div>
+            <div class="card-item">
+                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2017/01/14/12/48/hotel-1979406_1280.jpg)">
+                            <div class="card-medio" style="background-color: bisque;">
+                                Hotel
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hotel 1</h3>
+                        <p>Palermo</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <p>Precio por día</p>
+                        <p><strong>$90.000</strong> /imp. incluidos</p>
+                    </div>
+                </a>
+            </div>
             <div class="card-item">Card 3</div>
             <div class="card-item">Card 4</div>
             <div class="card-item">Card 5</div>
@@ -84,17 +111,22 @@
         <section class="flex-container">
             <!-- Cards -->
             <div class="card-item2">
-                <a href="">
-                    <div class="card-imagen">
-                        <img src="https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg" alt="Casa1">
-                    </div>
-                    <div class="card-medio">
-                        Alojamiento
+                <a href="" class="card-link">
+                    <div class="card-header">
+                        <div class="card-imagen" style="background-image: url(https://cdn.pixabay.com/photo/2014/07/31/21/41/apartment-406901_1280.jpg)">
+                            <div class="card-medio">
+                                Alojamiento
+                            </div>
+                        </div>
                     </div>
                     <div class="card-content">
                         <h3>Casa 1</h3>
                         <p>Barrio Villa 31</p>
-                        <p>$50.000 por noche</p>
+                    </div>
+                    <hr>
+                    <div class="card-footer">
+                        <h6>Precio por día</h6>
+                        <p><strong>$50.000</strong> + imp.</p>
                     </div>
                 </a>
             </div>

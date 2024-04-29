@@ -1,5 +1,24 @@
-/* // <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 200 to 1000 */
+/* ***** PALETA DE COLORES ***** */
+/* Acá van los colores personalizados para la página */
+/* Para usarlos hay que poner var(--color-elegido) como valor */
+
+:root{
+    --color-primero: rgb(164, 216, 213);
+    --color-primero-op: rgba(164, 216, 213, 0.75);
+    --color-segundo: rgb();
+    --color-segundo-op: rgba();
+    --color-tercero: rgb();
+    --color-tercero-op: rgba();
+
+    --color-fondo: rgb();
+    --color-fondo-alt: rgba();
+
+    --color-fuente: rgb(88, 88, 88);
+
+    --color-sombra: rgb(212, 212, 212);
+}
+
+/* ***************************** */
 
 .nunito-body {
   font-family: "Nunito", sans-serif;
@@ -7,6 +26,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .indie-flower-regular {
     font-family: "Indie Flower", cursive;
     font-weight: 400;
@@ -22,6 +42,7 @@
 body {
     background-color: #eaeaea;
 }
+
 .header {
     width: 100%;
     z-index: 1000;
@@ -51,6 +72,8 @@ body {
     width: auto;
 }
 
+/*********************************************/
+
 .flex-container{
     display: flex;
     justify-content: center;
@@ -59,25 +82,23 @@ body {
 
 .busqueda-container{
     width: 100%;
-    height: 650px;
+    padding: 80px;
     overflow: hidden;
     background-image: url(https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
+
 .welcome-heading {
     color: rgb(255, 255, 255); /* Color blanco */
-    text-align: left; /* Alineado a la izquierda */
+    text-align: center; /* Alineado a la izquierda */
     font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10); 
-    margin-bottom: 550px
-    
-     
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10);
 }
 
 .company-name {
@@ -97,36 +118,44 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10); 
 
 
+    transition: all ease-out;
 }
 
 .buscador{
-    background-color: #eaeaea;
+    background-color: #eaeaea0c;
     padding: 16px 16px;
     border-radius: 16px;
-    margin-top: 500px;
-    display: center;
-    align-items: flex-start; /* Centra verticalmente el contenido */
-    justify-content: left; /* Centra horizontalmente el contenido */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
     
 }
     
 
 
+.card-header{
+    height: 165px;
+}
+
 .card-content{
-    margin: 0px 6px 0px 6px;
+    margin: 16px 16px 12px 16px;
+}
+
+.card-footer{
+    margin: 12px 16px;
 }
 
 .card-item{
-    margin: 20px;
-    width: 250px;
+    margin: 8px;
+    width: 270px;
     min-width: 225px;
-    height: 350px;
+    height: 400px;
     border-radius: 16px;
-    box-shadow: 5px 5px 15px rgb(212, 212, 212);
+    box-shadow: 5px 5px 15px var(--color-sombra);
     transition: all 200ms ease-out;
 }
 
-.card-item a{
+.card-link{
     text-decoration: none;
     color: #000;
 }
@@ -136,9 +165,16 @@ body {
 
 }
 
-.card-imagen img{
+.card-imagen{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
+    height: 100%;
     border-radius: 16px 16px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .card-item div h3{
@@ -146,31 +182,33 @@ body {
 }
 
 .card-item2{
-    margin: 20px;
+    margin: 8px;
     width: 250px;
     min-width: 225px;
     height: 350px;
     border-radius: 16px;
     border: 1px solid rgb(238, 238, 238);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 3px var(--color-sombra);
     transition: all 250ms ease-out;
 }
 
 .card-item2:hover{
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 15px var(--color-sombra);
+    scale: 103%;
 }
 
 .card-medio{
     background-color: rgb(198, 255, 243);
-    width: 50%;
     border-radius: 12px;
-    padding: 2px 6px;
+    padding: 2px 24px;
     font-weight: 600;
     position: relative;
-    left: 25%;
-    bottom: 5%;
-    display: flex;
-    justify-content: center;
+    top: 8%;
+}
+
+hr{
+    color: #fff;
+    margin: 0px 16px;
 }
 
 .main-container{
@@ -181,6 +219,8 @@ body {
 .main-container div h2{
     padding: 10px 16px;
 }
+
+/***********************************/
 
 .footer{
     height: 270px;
