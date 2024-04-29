@@ -183,11 +183,40 @@ body {
 }
 
 .footer{
-    height: 140px;
+    height: 270px;
     background-color:rgb(164, 216, 213);
 }
 
-.nav-links-footer a{
+.texto-redsocial{
+    text-align: center;
+    padding: 10px;
+}
+
+.redsocial-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+}
+    
+
+.redsocial-container a {
+    text-decoration: none;
+    font-size: 40px;
+    width: 150px;
+    height: 150px;
+    color: #000;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.redsocial-container a:hover{
+    transform: scale(1.1);
+}
+
+.texto-footer2 a{
+    display: flex;
+    justify-content: center;
     color: #000;
     text-decoration: none;
 }
