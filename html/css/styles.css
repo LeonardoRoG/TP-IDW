@@ -51,16 +51,19 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 4px 20px;
 }
 
 .nav-links li{
     display: inline-block;
     padding: 0px 10px;
     list-style: none;
+    transition: all 0.2s ease-in-out;
 }
 
 .nav-links li:hover{
     transform: scale(1.1);
+    font-weight: 600;
 }
 .nav-links a{
     color: #000;
@@ -70,6 +73,7 @@ body {
 .logo img {
     height: 70px;
     width: auto;
+    display: flex;
 }
 
 /*********************************************/
@@ -78,6 +82,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .busqueda-container{
@@ -97,7 +102,7 @@ body {
 .welcome-heading {
     color: rgb(255, 255, 255); /* Color blanco */
     text-align: center; /* Alineado a la izquierda */
-    font-size: 60px;
+    font-size: 35px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10);
 }
 
