@@ -181,6 +181,59 @@ body {
 .main-container div h2{
     padding: 10px 16px;
 }
+.nosotros-section img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 650px; /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido siguiente */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+.nosotros-section {
+    text-align: center; /* Justifica el texto dentro de la sección */
+    margin: 25px; /* Centra la sección horizontalmente */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+    
+}
+
+.nosotros-section img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    display: block; /* Muestra la imagen como un bloque para evitar espacio adicional */
+    margin-bottom: 100px; /* Espacio inferior debajo de la imagen */
+}
+
+.nosotros-section h1 {
+    font-family: "indie flower";
+    color: #333; /* Color del título */
+    font-size: 32px; /* Tamaño de la fuente del título */
+    margin-bottom: 20px; /* Espacio inferior debajo del título */
+    max-width: 50;
+    text-align: center;
+    align-items: center;    
+    justify-content: center;    
+    flex-direction: column;
+
+
+}
+
+.nosotros-section p {
+    color: #666; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente del texto */
+    line-height: 1.5; /* Altura de línea para el texto */
+    
+    height: 50;  
+    margin-right: 300px;
+    margin-left: 300px;  
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+    
+
 
 .footer{
     height: 140px;
