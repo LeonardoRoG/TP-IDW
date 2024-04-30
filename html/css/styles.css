@@ -3,7 +3,7 @@
 /* Para usarlos hay que poner var(--color-elegido) como valor */
 
 :root{
-    --color-primero: rgb(164, 216, 213);
+    --color-primero:rgb(46, 106, 41);
     --color-primero-op: rgba(164, 216, 213, 0.75);
     --color-segundo: rgb();
     --color-segundo-op: rgba();
@@ -17,6 +17,7 @@
 
     --color-sombra: rgb(212, 212, 212);
 }
+
 
 /* ***************************** */
 
@@ -47,12 +48,13 @@ body {
     width: 100%;
     z-index: 1000;
     position: fixed;
-    background-color: rgb(164, 216, 213);
+    background-color: var(--color-primero);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 4px 20px;
 }
+
 
 .nav-links li{
     display: inline-block;
@@ -66,7 +68,7 @@ body {
     font-weight: 600;
 }
 .nav-links a{
-    color: #000;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -317,12 +319,13 @@ hr{
 
 .footer{
     height: 270px;
-    background-color:rgb(164, 216, 213);
+    background-color:var(--color-primero);
 }
 
 .texto-redsocial{
     text-align: center;
     padding: 10px;
+    color: #fff;
 }
 
 .redsocial-container {
@@ -338,7 +341,7 @@ hr{
     font-size: 40px;
     width: 150px;
     height: 150px;
-    color: #000;
+    color: #FFF;
     margin-right: 10px;
     text-align: center;
 }
@@ -350,6 +353,7 @@ hr{
 .texto-footer2 a{
     display: flex;
     justify-content: center;
-    color: #000;
+    color: #FFF;
     text-decoration: none;
 }
+
