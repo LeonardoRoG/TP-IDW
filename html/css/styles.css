@@ -4,7 +4,7 @@
 
 :root{
     --color-primero:rgb(46, 106, 41);
-    --color-primero-op: rgba(164, 216, 213, 0.75);
+    --color-primero-op: rgba(46, 106, 41, 0.75);
     --color-segundo: rgb();
     --color-segundo-op: rgba();
     --color-tercero: rgb();
@@ -14,6 +14,7 @@
     --color-fondo-alt: rgba();
 
     --color-fuente: rgb(88, 88, 88);
+    --color-fuente-alt: rgb(255,255,255);
 
     --color-sombra: rgb(212, 212, 212);
 }
@@ -86,8 +87,9 @@ body {
     background-color: var(--color-primero);
     border-radius: 8px;
     margin: 4px;
-    color: var(--color-fuente);
+    color: var(--color-fuente-alt);
     box-shadow: 5px 5px 15px var(--color-sombra);
+    font-weight: 600;
 }
 
 .boton-primario:hover{
