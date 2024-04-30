@@ -55,13 +55,13 @@ body {
     padding: 4px 20px;
 }
 
-
 .nav-links li{
     display: inline-block;
     padding: 0px 10px;
     list-style: none;
     transition: all 0.2s ease-in-out;
 }
+
 
 .nav-links li:hover{
     transform: scale(1.1);
@@ -71,6 +71,16 @@ body {
     color: #FFF;
     text-decoration: none;
 }
+
+.logo {
+    display: flex; 
+    align-items: center; 
+  }
+  
+.logo h2 {
+    margin-left: 10px; 
+    color: #eaeaea;
+  }
 
 .logo img {
     height: 70px;
