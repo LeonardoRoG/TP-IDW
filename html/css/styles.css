@@ -78,11 +78,46 @@ body {
 
 /*********************************************/
 
+.boton-primario{
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-primero);
+    border-radius: 8px;
+    margin: 4px;
+    color: var(--color-fuente);
+    box-shadow: 5px 5px 15px var(--color-sombra);
+}
+
+.boton-primario:hover{
+    background-color: var(--color-primero-op);
+}
+
 .flex-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 20px;
+}
+
+.form-buscador{
+    display: flex;
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* .form-label{
+
+} */
+
+.form-input{
+    background-color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    margin: 4px;
+    box-shadow: 5px 5px 15px var(--color-sombra);
+
 }
 
 .busqueda-container{
