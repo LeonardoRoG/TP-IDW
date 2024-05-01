@@ -42,7 +42,7 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: white;
 }
 
 .header {
@@ -147,13 +147,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    opacity: 0.8;
 }
 
 .welcome-heading {
     color: rgb(255, 255, 255); /* Color blanco */
     text-align: center; /* Alineado a la izquierda */
     font-size: 35px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10);
+    text-shadow:4px 4px 4px rgba(20, 18, 0, 0.899);
 }
 
 .company-name {
@@ -161,7 +162,7 @@ body {
     text-align: center; /* Alineado al centro */
     font-size: 70px;
     font-family: 'Indie Flower', cursive;
-    text-shadow: 2px 2px 4px rgba(230, 234, 35, 0.10); 
+    text-shadow: 4px 4px 4px rgba(19, 39, 34, 0.974); 
 }
 .company-additional {
     color: rgb(254, 254, 254); /* Color negro para la palabra "Hospedajes" */
@@ -170,7 +171,8 @@ body {
     text-align: center;
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.10); 
+    text-shadow: 1px 1px 20px Black (57, 240, 194, 0.974); 
+    
 
 
     transition: all ease-out;
@@ -190,10 +192,12 @@ body {
 
 .card-header{
     height: 165px;
+    
 }
 
 .card-content{
     margin: 16px 16px 12px 16px;
+    
 }
 
 .card-footer{
@@ -201,6 +205,7 @@ body {
 }
 
 .card-item{
+    background-color: #24232327;
     margin: 8px;
     width: 270px;
     min-width: 225px;
@@ -273,12 +278,41 @@ hr{
 .main-container div h2{
     padding: 10px 16px;
 }
+.image-overlay {
+    position: absolute; /* Establece la posición absoluta para superponer el contenido */
+    top: 50%; /* Coloca el contenido en la mitad superior de la sección */
+    left: 50%; /* Coloca el contenido en el centro horizontal de la sección */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    text-align: center; /* Alinea el texto al centro */
+    color: white; /* Color del texto */
+    z-index: 1; /* Asegura que el overlay esté delante de la imagen */
+    width: 100%; /* Ajusta el ancho del overlay al 100% */
+}
+
+.image-overlay h1 {
+    font-family: "indie flower"; /* Establece la fuente del título */
+    font-size: 36px; /* Tamaño del título */
+    margin: 0; /* Elimina el margen para evitar espacios adicionales */
+    text-shadow: 4px 4px 4px rgba(20, 18, 0, 0.899); /* Sombra dorada con desplazamiento horizontal de 2px, desplazamiento vertical de 2px y desenfoque de 4px */
+}
+
+.nosotros-section img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 650px; /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido siguiente */
+    box-shadow: 0px 0px 10px rgb(247, 246, 246); /* Sombra suave alrededor de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    opacity: 0.7; /* Opacidad de la imagen (valor entre 0 y 1, donde 0 es completamente transparente y 1 es completamente opaco) */
+}
+
+
+
 .nosotros-section img {
     width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
     height: 650px; /* La altura se ajustará automáticamente para mantener la proporción */
     display: block; /* Asegura que la imagen se muestre como un bloque */
     margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido siguiente */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra suave alrededor de la imagen */
     border-radius: 8px; /* Bordes redondeados */
 }
 
@@ -298,16 +332,20 @@ hr{
 
 .nosotros-section h1 {
     font-family: "indie flower";
-    color: #333; /* Color del título */
-    font-size: 32px; /* Tamaño de la fuente del título */
+    color: white(0 98% 0%); /* Color del título */
+    font-size: 100px; /* Tamaño de la fuente del título */
     margin-bottom: 20px; /* Espacio inferior debajo del título */
     max-width: 50;
     text-align: center;
     align-items: center;    
     justify-content: center;    
     flex-direction: column;
+    
 
 
+}
+.bienvenidos {
+    font-weight: bold;
 }
 
 .nosotros-section p {
@@ -324,7 +362,36 @@ hr{
     justify-content: space-around;
     display: flex;
 }
-    
+
+.carousel-container {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Establecer el tipo de desplazamiento */
+}
+
+.carousel {
+    display: flex; /* Usar flexbox para alinear imágenes horizontalmente */
+    scroll-snap-align: start; /* Alinear imágenes al inicio del contenedor */
+}
+.nosotros-section p.titulo {
+    font-size: 24px; /* Tamaño de la fuente deseado */
+}
+
+.carousel img {
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0.9;
+}
+  
 
 
 /***********************************/
