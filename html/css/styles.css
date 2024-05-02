@@ -73,6 +73,11 @@ body {
     text-decoration: none;
 }
 
+.nav-links .contacto{
+    background-color: #eaeaea9c;
+    border-radius: 10px;
+}
+
 .logo {
     display: flex; 
     align-items: center;
