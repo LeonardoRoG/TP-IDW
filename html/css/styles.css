@@ -462,8 +462,10 @@ hr{
     text-align: center;
 }
 
+
 .redsocial-container a:hover{
     transform: scale(1.1);
+    color:#ff952bef ;
 }
 
 .texto-footer2 a{
