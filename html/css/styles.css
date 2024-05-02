@@ -522,4 +522,8 @@ input[type="submit"]:hover {
 
 .section1 {
     flex: 50%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 50px;
 }
