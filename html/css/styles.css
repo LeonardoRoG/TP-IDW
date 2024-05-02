@@ -513,6 +513,8 @@ input[type="submit"]:hover {
 
 .mapa-section {
     flex: 50%;
+    margin-top: -25px;
+    margin-bottom: 50px;
 }
 .container1 {
     display: flex;
