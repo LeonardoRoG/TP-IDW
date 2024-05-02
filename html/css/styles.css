@@ -441,19 +441,18 @@ hr{
 /**************************************/
 
 .formulario-section img {
-    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
-    height: 800px; /* La altura se ajustará automáticamente para mantener la proporción */
-    display: block; /* Asegura que la imagen se muestre como un bloque */
-    margin-bottom: 30px; /* Espacio inferior para separar la imagen del contenido siguiente */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Sombra suave alrededor de la imagen */
-    border-radius: 20px; /* Bordes redondeados */
+    width: 100%; 
+    height: 800px; 
+    display: block; 
+    margin-bottom: 30px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); 
+    border-radius: 20px; 
 }
 
 .formulario-section {
-    text-align: center; /* Justifica el texto dentro de la sección */
-    margin: 25px; /* Centra la sección horizontalmente */
-    padding: 20px; /* Añade espacio alrededor del contenido */
-    
+    text-align: center; 
+    margin: 25px; 
+    padding: 20px; 
 }
 
 
