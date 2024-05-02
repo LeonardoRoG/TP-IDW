@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20a839c2e7.js" crossorigin="anonymous"></script>
 </head>
 <body class="nunito-body">
     <header class="header">
@@ -24,33 +25,44 @@
         </nav>
         
     </header>
-<!-- formulario -->
-<main class="main-container">
-    <section class="formulario-section">
-    
-        <img src="https://cdn.pixabay.com/photo/2018/03/14/18/05/alpine-hut-3225908_1280.jpg" alt="Imagen sobre nosotros">
-        <h2>Formulario de Contacto</h2>
-    
-        <form action="procesar_formulario.php" method="POST">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-    
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            <label for="telefono">Teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono"><br><br>
-    
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
-    
-            <input type="submit" value="Enviar">
-        </form>
-    
-    </body>
-    </html>
-    </section>
-</main>
+    <!-- formulario -->
+    <main class="main-container">
+        <section class="formulario-section">
+        
+            <img src="https://cdn.pixabay.com/photo/2018/03/14/18/05/alpine-hut-3225908_1280.jpg" alt="Imagen sobre nosotros">
+            <h2>Formulario de Contacto</h2>
+        
+            <form action="procesar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required class="form-input"><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required class="form-input"><br><br>
+        
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" class="form-input"><br><br>
+        
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required class="form-input"></textarea><br><br>
+        
+                <input type="submit" value="Enviar" class="boton-primario">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="texto-redsocial">CONTÁCTANOS!</h2>
+        <div class="redsocial-container">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.gmail.com/" class="fa fa-envelope"></a>
+        </div>   
+        <div class="texto-footer2">
+            <a href="nosotros.html"><u>INFORMACIÓN ACERCA DE NOSOTROS!</u></a>
+        </div>
+    </footer>
+</body>
+</html>
+
     
 
 

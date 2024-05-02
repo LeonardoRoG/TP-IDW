@@ -75,7 +75,7 @@ body {
 
 .logo {
     display: flex; 
-    align-items: center; 
+    align-items: center;
   }
   
 .logo h2 {
@@ -156,6 +156,10 @@ body {
     text-shadow:4px 4px 4px rgba(20, 18, 0, 0.899);
 }
 
+.welcome-container img{
+    margin: 32px 0px;
+}
+
 .company-name {
     color: rgb(255, 255, 255); /* Color negro */
     text-align: center; /* Alineado al centro */
@@ -166,15 +170,11 @@ body {
 .company-additional {
     color: rgb(254, 254, 254); /* Color negro para la palabra "Hospedajes" */
     font-weight: bold; /* Fuente en negrita para resaltar */
-    margin-left: 20px; /* Espacio entre "NaturAlma" y "Hospedajes" */
+    margin-bottom: 20px; /* Espacio entre "NaturAlma" y "Hospedajes" */
     text-align: center;
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
     text-shadow: 1px 1px 20px Black (57, 240, 194, 0.974); 
-    
-
-
-    transition: all ease-out;
 }
 
 .buscador{
@@ -274,9 +274,10 @@ hr{
     padding-top: 70px;
 }
 
-.main-container div h2{
-    padding: 10px 16px;
+.main-container h2{
+    margin: 12px 24px;
 }
+
 .image-overlay {
     position: absolute; /* Establece la posición absoluta para superponer el contenido */
     top: 50%; /* Coloca el contenido en la mitad superior de la sección */
