@@ -74,8 +74,14 @@ body {
 }
 
 .nav-links .contacto{
-    background-color: #26ec86bd;
+    padding: 4px;
+    background-color: #ff9c39e1;
     border-radius: 10px;
+}
+
+.nav-links .contacto:hover{
+    transition: all 0.8s;
+    background-color: #ff952bef
 }
 
 .logo {
