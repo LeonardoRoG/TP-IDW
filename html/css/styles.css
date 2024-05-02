@@ -10,7 +10,7 @@
     --color-tercero: rgb();
     --color-tercero-op: rgba();
 
-    --color-fondo: rgb();
+    --color-fondo: rgb(250, 250, 250);
     --color-fondo-alt: rgba();
 
     --color-fuente: rgb(88, 88, 88);
@@ -42,7 +42,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: var(--color-fondo);
 }
 
 .header {
@@ -66,7 +66,7 @@ body {
 
 .nav-links li:hover{
     transform: scale(1.1);
-    font-weight: 600;
+    font-weight: 700;
 }
 .nav-links a{
     color: #FFF;
@@ -75,7 +75,7 @@ body {
 
 .logo {
     display: flex; 
-    align-items: center; 
+    align-items: center;
   }
   
 .logo h2 {
@@ -135,7 +135,7 @@ body {
 
 }
 
-.busqueda-container{
+.hero-image-container{
     width: 100%;
     padding: 80px;
     overflow: hidden;
@@ -147,7 +147,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    opacity: 0.8;
 }
 
 .welcome-heading {
@@ -155,6 +154,10 @@ body {
     text-align: center; /* Alineado a la izquierda */
     font-size: 35px;
     text-shadow:4px 4px 4px rgba(20, 18, 0, 0.899);
+}
+
+.welcome-container img{
+    margin: 32px 0px;
 }
 
 .company-name {
@@ -167,15 +170,11 @@ body {
 .company-additional {
     color: rgb(254, 254, 254); /* Color negro para la palabra "Hospedajes" */
     font-weight: bold; /* Fuente en negrita para resaltar */
-    margin-left: 20px; /* Espacio entre "NaturAlma" y "Hospedajes" */
+    margin-bottom: 20px; /* Espacio entre "NaturAlma" y "Hospedajes" */
     text-align: center;
     font-family: 'Indie Flower', cursive;
     font-size: 40px;
     text-shadow: 1px 1px 20px Black (57, 240, 194, 0.974); 
-    
-
-
-    transition: all ease-out;
 }
 
 .buscador{
@@ -205,7 +204,7 @@ body {
 }
 
 .card-item{
-    background-color: #24232327;
+    background-color: transparent;
     margin: 8px;
     width: 270px;
     min-width: 225px;
@@ -275,9 +274,10 @@ hr{
     padding-top: 70px;
 }
 
-.main-container div h2{
-    padding: 10px 16px;
+.main-container h2{
+    margin: 12px 24px;
 }
+
 .image-overlay {
     position: absolute; /* Establece la posición absoluta para superponer el contenido */
     top: 50%; /* Coloca el contenido en la mitad superior de la sección */
@@ -303,7 +303,7 @@ hr{
     margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido siguiente */
     box-shadow: 0px 0px 10px rgb(247, 246, 246); /* Sombra suave alrededor de la imagen */
     border-radius: 8px; /* Bordes redondeados */
-    opacity: 0.7; /* Opacidad de la imagen (valor entre 0 y 1, donde 0 es completamente transparente y 1 es completamente opaco) */
+    opacity: 0.9; /* Opacidad de la imagen (valor entre 0 y 1, donde 0 es completamente transparente y 1 es completamente opaco) */
 }
 
 
@@ -328,6 +328,7 @@ hr{
     width: 100%; /* La imagen ocupa todo el ancho del contenedor */
     display: block; /* Muestra la imagen como un bloque para evitar espacio adicional */
     margin-bottom: 100px; /* Espacio inferior debajo de la imagen */
+    
 }
 
 .nosotros-section h1 {
@@ -340,10 +341,35 @@ hr{
     align-items: center;    
     justify-content: center;    
     flex-direction: column;
+}
+
+.nosotros-section h1 {
+    position: relative; /* Añade posición relativa al contenedor del texto */
+    font-family: "indie flower";
+    color: white; /* Color del título */
+    font-size: 100px; /* Tamaño de la fuente del título */
+    margin-bottom: 20px; /* Espacio inferior debajo del título */
+    text-align: center;
+}
+
+.nosotros-section h1::before {
+    content: ''; /* Agrega contenido al pseudo-elemento */
+    position: absolute; /* Establece posición absoluta con respecto al elemento padre */
+    top: 0; /* Ubica el elemento en la parte superior del contenedor */
+    left: 500px; /* Ubica el elemento en el extremo izquierdo del contenedor */
+    
+    width: 50%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa todo el alto del contenedor */
+    background: rgba(0, 0, 0, 0.5);  /* Aplica un degradado desde negro con 50% de opacidad hasta transparente */
+    z-index: -1; /* Coloca el fondo detrás del texto */
+}
+
+
+
     
 
 
-}
+
 .bienvenidos {
     font-weight: bold;
 }
