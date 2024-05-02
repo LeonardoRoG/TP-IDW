@@ -286,7 +286,7 @@ hr{
     text-align: center; /* Alinea el texto al centro */
     color: white; /* Color del texto */
     z-index: 1; /* Asegura que el overlay esté delante de la imagen */
-    width: 100%; /* Ajusta el ancho del overlay al 100% */
+    width: 140%; /* Ajusta el ancho del overlay al 140% */
 }
 
 .image-overlay h1 {
