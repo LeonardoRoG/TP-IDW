@@ -66,7 +66,7 @@ body {
 
 .nav-links li:hover{
     transform: scale(1.1);
-    font-weight: 600;
+    font-weight: 700;
 }
 .nav-links a{
     color: #FFF;
@@ -303,7 +303,7 @@ hr{
     margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido siguiente */
     box-shadow: 0px 0px 10px rgb(247, 246, 246); /* Sombra suave alrededor de la imagen */
     border-radius: 8px; /* Bordes redondeados */
-    opacity: 0.7; /* Opacidad de la imagen (valor entre 0 y 1, donde 0 es completamente transparente y 1 es completamente opaco) */
+    opacity: 0.9; /* Opacidad de la imagen (valor entre 0 y 1, donde 0 es completamente transparente y 1 es completamente opaco) */
 }
 
 
@@ -328,6 +328,7 @@ hr{
     width: 100%; /* La imagen ocupa todo el ancho del contenedor */
     display: block; /* Muestra la imagen como un bloque para evitar espacio adicional */
     margin-bottom: 100px; /* Espacio inferior debajo de la imagen */
+    
 }
 
 .nosotros-section h1 {
@@ -340,10 +341,35 @@ hr{
     align-items: center;    
     justify-content: center;    
     flex-direction: column;
+}
+
+.nosotros-section h1 {
+    position: relative; /* Añade posición relativa al contenedor del texto */
+    font-family: "indie flower";
+    color: white; /* Color del título */
+    font-size: 100px; /* Tamaño de la fuente del título */
+    margin-bottom: 20px; /* Espacio inferior debajo del título */
+    text-align: center;
+}
+
+.nosotros-section h1::before {
+    content: ''; /* Agrega contenido al pseudo-elemento */
+    position: absolute; /* Establece posición absoluta con respecto al elemento padre */
+    top: 0; /* Ubica el elemento en la parte superior del contenedor */
+    left: 500px; /* Ubica el elemento en el extremo izquierdo del contenedor */
+    
+    width: 50%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa todo el alto del contenedor */
+    background: rgba(0, 0, 0, 0.5);  /* Aplica un degradado desde negro con 50% de opacidad hasta transparente */
+    z-index: -1; /* Coloca el fondo detrás del texto */
+}
+
+
+
     
 
 
-}
+
 .bienvenidos {
     font-weight: bold;
 }
