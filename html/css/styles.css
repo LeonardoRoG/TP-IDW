@@ -478,36 +478,46 @@ hr{
 .formulario-section {
     text-align: left; 
     margin: 25px; 
-    padding: 20px; 
+    padding: 20px;
+    flex: 50%; 
 }
 
 .contenedor {
-    position: relative; /* Establece el posicionamiento relativo */
+    position: relative; 
     width: 100%;
-    display: block; /* Permite que el contenedor se ajuste al contenido */
+    display: flex; 
 }
 
 .texto-superpuesto {
-    position: absolute; /* Establece el posicionamiento absoluto */
-    top: 50%; /* Ubica el texto en la mitad superior del contenedor */
-    left: 50%; /* Ubica el texto en el centro horizontal del contenedor */
-    transform: translate(-50%, -50%); /* Centra el texto verticalmente y horizontalmente */
-    color: white; /* Color del texto */
-    font-size: 60px; /* Tamaño de la fuente */
-    font-weight: bold; /* Establece el grosor de la fuente */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Sombra de texto para mejorar la legibilidad */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 60px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
 }
 
 input[type="submit"] {
-    background-color: #4CAF50; /* Elige el color que prefieras */
-    color: white; /* Elige el color del texto que prefieras */
+    background-color: #4CAF50; 
+    color: white; 
     padding: 14px 20px;
     border: none;
     cursor: pointer;
 }
+
 input[type="submit"]:hover {
-    background-color: #45a049; /* Elige el color que prefieras cuando el mouse esté encima del botón */
+    background-color: #45a049; 
 }
 
+.mapa-section {
+    flex: 50%;
+}
+.container1 {
+    display: flex;
+}
 
-
+.section1 {
+    flex: 50%;
+}
