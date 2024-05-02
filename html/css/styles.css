@@ -498,6 +498,16 @@ hr{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Sombra de texto para mejorar la legibilidad */
 }
 
+input[type="submit"] {
+    background-color: #4CAF50; /* Elige el color que prefieras */
+    color: white; /* Elige el color del texto que prefieras */
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049; /* Elige el color que prefieras cuando el mouse esté encima del botón */
+}
 
 
 
