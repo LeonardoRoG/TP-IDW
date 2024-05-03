@@ -338,7 +338,6 @@ hr{
 .nosotros-section img {
     width: 100%; /* La imagen ocupa todo el ancho del contenedor */
     display: block; /* Muestra la imagen como un bloque para evitar espacio adicional */
-    margin-bottom: 100px; /* Espacio inferior debajo de la imagen */
     
 }
 
@@ -409,7 +408,6 @@ hr{
 
 .carousel {
     display: flex; /* Usar flexbox para alinear imágenes horizontalmente */
-    scroll-snap-align: start; /* Alinear imágenes al inicio del contenedor */
 }
 .nosotros-section p.titulo {
     font-size: 24px; /* Tamaño de la fuente deseado */
