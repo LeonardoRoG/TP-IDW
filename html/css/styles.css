@@ -1,0 +1,540 @@
+/* ***** PALETA DE COLORES ***** */
+/* Acá van los colores personalizados para la página */
+/* Para usarlos hay que poner var(--color-elegido) como valor */
+
+:root{
+    --color-primero:rgb(46, 106, 41);
+    --color-primero-op: rgba(46, 106, 41, 0.75);
+    --color-segundo: rgb();
+    --color-segundo-op: rgba();
+    --color-tercero: rgb();
+    --color-tercero-op: rgba();
+
+    --color-fondo: rgb(250, 250, 250);
+    --color-fondo-alt: rgba();
+
+    --color-fuente: rgb(88, 88, 88);
+    --color-fuente-alt: rgb(255,255,255);
+
+    --color-sombra: rgb(212, 212, 212);
+}
+
+
+/* ***************************** */
+
+.nunito-body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.indie-flower-regular {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+}
+
+.header {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color: var(--color-primero);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 20px;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0px 10px;
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.nav-links li:hover{
+    transform: scale(1.1);
+    font-weight: 700;
+}
+.nav-links a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.nav-links .contacto{
+    padding: 4px;
+    background-color: #ff9c39e1;
+    border-radius: 10px;
+}
+
+.nav-links .contacto:hover{
+    transition: all 0.8s;
+    background-color: #ff952bef
+}
+
+.logo {
+    display: flex; 
+    align-items: center;
+  }
+  
+.logo h2 {
+    margin-left: 10px; 
+    color: #eaeaea;
+  }
+
+.logo img {
+    height: 70px;
+    width: auto;
+    display: flex;
+}
+
+/*********************************************/
+
+.boton-primario{
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--color-primero);
+    border-radius: 8px;
+    margin: 4px;
+    color: var(--color-fuente-alt);
+    box-shadow: 5px 5px 15px var(--color-sombra);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.boton-primario:hover{
+    background-color: var(--color-primero-op);
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.form-buscador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .form-label{
+
+} */
+
+.form-input{
+    background-color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 6px;
+    margin: 4px;
+    box-shadow: 5px 5px 15px var(--color-sombra);
+
+}
+
+.hero-image-container{
+    width: 100%;
+    padding: 80px;
+    overflow: hidden;
+    background-image: url(https://cdn.pixabay.com/photo/2016/08/11/23/48/mountains-1587287_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-heading {
+    color: rgb(255, 255, 255); /* Color blanco */
+    text-align: center; /* Alineado a la izquierda */
+    font-size: 35px;
+    text-shadow:4px 4px 4px rgba(20, 18, 0, 0.899);
+}
+
+.welcome-container img{
+    margin: 32px 0px;
+}
+
+.company-name {
+    color: rgb(255, 255, 255); /* Color negro */
+    text-align: center; /* Alineado al centro */
+    font-size: 70px;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 4px 4px 4px rgba(19, 39, 34, 0.974); 
+}
+.company-additional {
+    color: rgb(254, 254, 254); /* Color negro para la palabra "Hospedajes" */
+    font-weight: bold; /* Fuente en negrita para resaltar */
+    margin-bottom: 20px; /* Espacio entre "NaturAlma" y "Hospedajes" */
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    text-shadow: 1px 1px 20px Black (57, 240, 194, 0.974); 
+}
+
+.buscador{
+    background-color: #eaeaea0c;
+    padding: 16px 16px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    
+}
+    
+
+
+.card-header{
+    height: 165px;
+    
+}
+
+.card-content{
+    margin: 16px 16px 12px 16px;
+    
+}
+
+.card-footer{
+    margin: 12px 16px;
+}
+
+.card-item{
+    background-color: transparent;
+    margin: 8px;
+    width: 270px;
+    min-width: 225px;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 5px 5px 15px var(--color-sombra);
+    transition: all 200ms ease-out;
+}
+
+.card-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.card-item:hover{
+    scale: 103%;
+
+}
+
+.card-imagen{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-item div h3{
+    margin-top: 0px;
+}
+
+.card-item2{
+    margin: 8px;
+    width: 270px;
+    min-width: 225px;
+    height: 400px;
+    border-radius: 16px;
+    border: 1px solid var(--color-sombra);
+    transition: all 250ms ease-out;
+}
+
+.card-item2:hover{
+    box-shadow: 0px 0px 15px var(--color-sombra);
+    scale: 103%;
+}
+
+.card-medio{
+    background-color: rgb(198, 255, 243);
+    border-radius: 12px;
+    padding: 2px 24px;
+    font-weight: 600;
+    position: relative;
+    top: 8%;
+}
+
+hr{
+    color: #fff;
+    margin: 0px 16px;
+}
+
+.main-container{
+    padding: 0px 0px;
+    padding-top: 70px;
+}
+
+.main-container h2{
+    margin: 12px 24px;
+}
+
+.image-overlay {
+    position: absolute; /* Establece la posición absoluta para superponer el contenido */
+    top: 50%; /* Coloca el contenido en la mitad superior de la sección */
+    left: 50%; /* Coloca el contenido en el centro horizontal de la sección */
+    transform: translate(-50%, -50%); /* Centra el contenido */
+    text-align: center; /* Alinea el texto al centro */
+    color: white; /* Color del texto */
+    z-index: 1; /* Asegura que el overlay esté delante de la imagen */
+    width: 140%; /* Ajusta el ancho del overlay al 140% */
+}
+
+.image-overlay h1 {
+    font-family: "indie flower"; /* Establece la fuente del título */
+    font-size: 36px; /* Tamaño del título */
+    margin: 0; /* Elimina el margen para evitar espacios adicionales */
+    text-shadow: 4px 4px 4px rgba(20, 18, 0, 0.899); /* Sombra dorada con desplazamiento horizontal de 2px, desplazamiento vertical de 2px y desenfoque de 4px */
+}
+
+.nosotros-section img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 650px; /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido siguiente */
+    box-shadow: 0px 0px 10px rgb(247, 246, 246); /* Sombra suave alrededor de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    opacity: 0.9; /* Opacidad de la imagen (valor entre 0 y 1, donde 0 es completamente transparente y 1 es completamente opaco) */
+}
+
+
+
+.nosotros-section img {
+    width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 650px; /* La altura se ajustará automáticamente para mantener la proporción */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin-bottom: 20px; /* Espacio inferior para separar la imagen del contenido siguiente */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+.nosotros-section {
+    text-align: center; /* Justifica el texto dentro de la sección */
+    margin: 25px; /* Centra la sección horizontalmente */
+    padding: 20px; /* Añade espacio alrededor del contenido */
+    
+}
+
+.nosotros-section img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    display: block; /* Muestra la imagen como un bloque para evitar espacio adicional */
+    
+}
+
+.nosotros-section h1 {
+    font-family: "indie flower";
+    color: white(0 98% 0%); /* Color del título */
+    font-size: 100px; /* Tamaño de la fuente del título */
+    margin-bottom: 20px; /* Espacio inferior debajo del título */
+    max-width: 50;
+    text-align: center;
+    align-items: center;    
+    justify-content: center;    
+    flex-direction: column;
+}
+
+.nosotros-section h1 {
+    position: relative; /* Añade posición relativa al contenedor del texto */
+    font-family: "indie flower";
+    color: white; /* Color del título */
+    font-size: 100px; /* Tamaño de la fuente del título */
+    margin-bottom: 20px; /* Espacio inferior debajo del título */
+    text-align: center;
+}
+
+.nosotros-section h1::before {
+    content: ''; /* Agrega contenido al pseudo-elemento */
+    position: absolute; /* Establece posición absoluta con respecto al elemento padre */
+    top: 0; /* Ubica el elemento en la parte superior del contenedor */
+    left: 500px; /* Ubica el elemento en el extremo izquierdo del contenedor */
+    
+    width: 50%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa todo el alto del contenedor */
+    background: rgba(0, 0, 0, 0.5);  /* Aplica un degradado desde negro con 50% de opacidad hasta transparente */
+    z-index: -1; /* Coloca el fondo detrás del texto */
+}
+
+
+
+    
+
+
+
+.bienvenidos {
+    font-weight: bold;
+}
+
+.nosotros-section p {
+    color: #666; /* Color del texto */
+    font-size: 18px; /* Tamaño de la fuente del texto */
+    line-height: 1.5; /* Altura de línea para el texto */
+    
+    height: 50;  
+    margin-right: 300px;
+    margin-left: 300px;  
+    text-align: justify;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+.carousel-container {
+    width: 80%; /* Ancho del contenedor */
+    margin: 0 auto; /* Centrar horizontalmente */
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    scroll-snap-type: x mandatory; /* Establecer el tipo de desplazamiento */
+}
+
+.carousel {
+    display: flex; /* Usar flexbox para alinear imágenes horizontalmente */
+}
+.nosotros-section p.titulo {
+    font-size: 24px; /* Tamaño de la fuente deseado */
+}
+
+.carousel img {
+    font-size: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 16px 16px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0.9;
+}
+  
+
+
+/***********************************/
+
+.footer{
+    height: 200px;
+    background-color:var(--color-primero);
+}
+
+.texto-redsocial{
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+.redsocial-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+}
+    
+
+.redsocial-container a {
+    text-decoration: none;
+    font-size: 35px;
+    width: 150px;
+    height: 50px;
+    color: #FFF;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+.redsocial-container a:hover{
+    transform: scale(1.1);
+    color:#ff952bef ;
+}
+
+.texto-footer2 a{
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/**************************************/
+/*FORMULARIO
+/**************************************/
+
+.formulario-section img {
+    width: 100%; 
+    height: 700px; 
+    display: block; 
+    margin-bottom: 30px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); 
+    border-radius: 20px; 
+}
+
+.formulario-section {
+    text-align: left; 
+    margin: 25px; 
+    padding: 20px;
+    flex: 50%; 
+}
+
+.contenedor {
+    position: relative; 
+    width: 100%;
+    display: flex; 
+}
+
+.texto-superpuesto {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 60px; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 14px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; 
+}
+
+.mapa-section {
+    flex: 50%;
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+.container1 {
+    display: flex;
+}
+
+.section1 {
+    flex: 50%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
